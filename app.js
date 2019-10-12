@@ -38,7 +38,7 @@ App({
     wxapi.login().then(res => {
       if (res.code) {
         console.log(res)
-        return request.get('https://dwra-og.yunwoke.com/test')
+        return request.post('https://dwra-og.yunwoke.com/test?bb=1&bb=2',{a:111})
       }
     }).then(res => {
       console.log(res)
